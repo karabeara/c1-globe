@@ -12,7 +12,7 @@
         padding: 0;
         background: #000000 url(/globe/loading.gif) center center no-repeat;
         color: #ffffff;
-        font-family: sans-serif;
+        font-family: Impact;
         font-size: 13px;
         line-height: 20px;
         height: 100%;
@@ -53,11 +53,11 @@
         left: 20px;
         background-color: rgba(0,0,0,0.2);
         border-radius: 3px;
-        font: 20px Georgia;
+        font: 23px Impact;
         padding: 10px;
       }
       .year {
-        font: 16px Georgia;
+        font: 16px Impact;
         line-height: 26px;
         height: 30px;
         text-align: center;
@@ -95,12 +95,11 @@
 
   <div id="currentInfo">
     <span id="year1990" class="year">1990</span>
-    <span id="year1995" class="year">1995</span>
-    <span id="year2000" class="year">2000</span>
+    <span id="year2015" class="year">2015</span>
   </div>
 
   <div id="title">
-    World Population
+    Gross Number of Maternal Deaths by Country Capital
   </div>
 
   <a id="ce" href="http://www.chromeexperiments.com/globe">
@@ -115,7 +114,7 @@
     if(!Detector.webgl){
       Detector.addGetWebGLMessage();
     } else {
-      var years = ['1990','1995','2000'];
+      var years = ['1990','2015'];
       var container = document.getElementById('container');
       var globe = new DAT.Globe(container);
       console.log(globe);
